@@ -712,7 +712,7 @@ Once you've created a model, Django automatically provides a high-level Python
 API for working with those models. Try it out by running
 ``python manage.py shell`` and typing the following::
 
-    >>> from books.models import Publisher
+    >>> from mysite.books.models import Publisher
     >>> p1 = Publisher(name='Apress', address='2855 Telegraph Avenue',
     ...     city='Berkeley', state_province='CA', country='U.S.A.',
     ...     website='http://www.apress.com/')
@@ -871,7 +871,7 @@ and enter it again with ``python manage.py shell``. (This is the simplest way
 to make code changes take effect.) Now the list of ``Publisher`` objects is
 much easier to understand::
 
-    >>> from books.models import Publisher
+    >>> from mysite.books.models import Publisher
     >>> publisher_list = Publisher.objects.all()
     >>> publisher_list
     [<Publisher: Apress>, <Publisher: O'Reilly>]
